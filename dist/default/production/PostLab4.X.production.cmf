@@ -1,0 +1,281 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/postlab4main.o
+resVect CODE 0 0 0 3 2 1
+code CODE 0 0 0 214 2 1
+intVect CODE 0 0 0 3B 2 1
+udata_bank0 BANK0 1 20 20 3 1 1
+udata_shr COMMON 1 70 70 2 1 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 23-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 23-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 214-1FFF 2
+ENTRY 214-1FFF 2
+IDLOC 2000-2003 2
+CODE 214-1FFF 2
+COMMON 72-7F 1
+EEDATA 2100-21FF 2
+STRCODE 214-1FFF 2
+STRING 214-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/postlab4main.o
+0 intVect CODE >64:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+4 intVect CODE >66:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+5 intVect CODE >67:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+6 intVect CODE >68:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+7 intVect CODE >70:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+8 intVect CODE >71:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+9 intVect CODE >73:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+A intVect CODE >74:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+B intVect CODE >76:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+D intVect CODE >78:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+E intVect CODE >79:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+F intVect CODE >80:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+10 intVect CODE >81:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+11 intVect CODE >82:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+12 intVect CODE >85:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+14 intVect CODE >85:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+15 intVect CODE >85:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+16 intVect CODE >85:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+17 intVect CODE >86:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+18 intVect CODE >87:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+19 intVect CODE >88:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+1A intVect CODE >89:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+1B intVect CODE >90:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+1C intVect CODE >92:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+1D intVect CODE >94:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+1E intVect CODE >95:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+1F intVect CODE >96:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+20 intVect CODE >97:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+21 intVect CODE >98:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+22 intVect CODE >100:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+23 intVect CODE >101:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+24 intVect CODE >102:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+25 intVect CODE >103:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+26 intVect CODE >105:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+27 intVect CODE >108:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+28 intVect CODE >109:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+29 intVect CODE >110:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+2A intVect CODE >112:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+2B intVect CODE >113:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+2C intVect CODE >114:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+2D intVect CODE >115:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+2E intVect CODE >116:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+2F intVect CODE >117:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+30 intVect CODE >118:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+31 intVect CODE >119:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+32 intVect CODE >121:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+33 intVect CODE >124:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+35 intVect CODE >125:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+36 intVect CODE >126:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+37 intVect CODE >127:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+38 intVect CODE >128:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+39 intVect CODE >129:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+3A intVect CODE >131:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+0 resVect CODE >57:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+0 resVect CODE >59:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+2 resVect CODE >60:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+0 code CODE >135:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+100 code CODE >137:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+101 code CODE >138:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+102 code CODE >139:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+103 code CODE >140:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+104 code CODE >141:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+105 code CODE >142:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+107 code CODE >145:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+108 code CODE >148:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+10A code CODE >149:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+10B code CODE >150:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+10C code CODE >152:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+10E code CODE >153:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+10F code CODE >154:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+110 code CODE >155:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+111 code CODE >156:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+112 code CODE >157:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+113 code CODE >158:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+114 code CODE >159:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+115 code CODE >160:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+116 code CODE >162:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+117 code CODE >163:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+118 code CODE >164:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+119 code CODE >166:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+11B code CODE >167:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+11C code CODE >168:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+11D code CODE >169:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+11E code CODE >170:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+11F code CODE >171:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+120 code CODE >172:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+121 code CODE >173:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+122 code CODE >174:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+123 code CODE >175:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+124 code CODE >176:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+125 code CODE >177:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+126 code CODE >179:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+127 code CODE >182:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+129 code CODE >183:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+12A code CODE >184:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+12B code CODE >185:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+12C code CODE >186:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+12D code CODE >188:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+12E code CODE >191:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+130 code CODE >192:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+131 code CODE >193:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+132 code CODE >194:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+133 code CODE >195:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+134 code CODE >196:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+135 code CODE >199:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+137 code CODE >200:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+138 code CODE >201:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+139 code CODE >202:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+13A code CODE >204:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+13B code CODE >207:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+13D code CODE >208:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+13E code CODE >209:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+13F code CODE >210:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+140 code CODE >212:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+141 code CODE >213:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+142 code CODE >215:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+143 code CODE >218:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+145 code CODE >219:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+146 code CODE >220:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+147 code CODE >222:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+149 code CODE >223:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+14A code CODE >224:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+14B code CODE >225:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+14C code CODE >227:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+200 code CODE >229:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+201 code CODE >230:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+202 code CODE >231:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+203 code CODE >232:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+204 code CODE >233:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+205 code CODE >234:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+206 code CODE >235:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+207 code CODE >236:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+208 code CODE >237:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+209 code CODE >238:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+20A code CODE >239:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+20B code CODE >240:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+20C code CODE >241:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+20D code CODE >242:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+20E code CODE >243:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+20F code CODE >244:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+210 code CODE >245:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+211 code CODE >246:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+212 code CODE >247:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+213 code CODE >248:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab4\PostLab4\PostLab4.X\postlab4main.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 214 0 ABS 0 - -
+__Hspace_1 72 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__LresVect 0 0 ABS 0 resVect -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 72 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HresVect 0 0 ABS 0 resVect -
+__Lconfig 0 0 CONFIG 4 config -
+__LintVect 0 0 ABS 0 intVect -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+__HintVect 0 0 ABS 0 intVect -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_bank0 1 20 20 3 1
+udata_shr 1 70 70 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
